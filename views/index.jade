@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1 Hello Boulder!
+    .container
+        .btn-group
+            button.langButton.btn.btn-primary#load-button Load Countries
+    
+
+    ul#country-list
+        for country in countries
+            li#country-name country.name
